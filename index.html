@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezamiento -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">DIEGO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#quién soy" onclick="seleccionar()">QUIEN SOY</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contactame" onclick="seleccionar()">CONTACTAME</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/i'm.jpeg" alt="">
+            </div>
+            <h1>DIEGO ROLDAN</h1>
+            <h2>Desarrollador FullStack Junior</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/dieginhor"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=573208882366"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/diego-roldan-a83755254/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/dieginhoskrp/"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- sobre mi -->
+    <section id="quién soy" class="quiensoy">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, mi nombre es Diego Roldán Rincón.</span> tengo 29 años, actualmente soy asesor comercial, me considero un programador junior ya que tengo conocimientos en javascript, react, tailwinds y node js, me apasiona el mundo de la tecnología porque encuentro en él desafios, oportunidades de crecimiento y la oportunidad de aportar o crear poyectos muy interesantes. Tengo experiencia certificada como técnico en sistemas y quiero seguir aprendiendo más en el mundo de programación </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 3208882366,
+                            +57 3054528658
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            diego.roldan4222@gmail.com,
+                            dieginho.r222@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Cra 95a # 26-38 sur, Bogotá Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Asesor Comercial,
+                            FREELANCE
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Mis Gustos</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="bi bi-person-hearts"></i>
+                            <span>FAMILIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-dribbble"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="bi bi-earbuds"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-dpad-fill"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-luggage-fill"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-code-slash"></i>
+                            <span>CODEAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-tsunami"></i>
+                            <span>NADAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="bi bi-people-fill"></i>
+                            <span>SOCIALIZAR</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a  download="descarga" href="./components/hoja de vida diego.docx">Descargar CV <i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- habilidades -->
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- habilidades tecnicas -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>react</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>72%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>tailwind</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>48%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Nodejs</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- habilidades profesionales -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Honestidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>73%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Deseos de aprender</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>capacidad de adaptación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- curriculum -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnico en Sistemas</h4>
+                        <span class="casa">Centro de aprendizaje Sena</span>
+                        <span class="fecha">2015-2016</span>
+                        <p>Realice este tecnico obteniendo resultados de aprendizaje, en el conocimiento de funcionamiento, dandole controles preventivos y correctivos a la computadora, realiza estructuracion de redes y configuración e instalaciones de aplicativos  </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador Web</h4>
+                        <span class="casa">Academlo</span>
+                        <span class="fecha">2023-actual</span>
+                        <p>Curso extensivo en el cual actualmete estoy cursando, llegando obtener conocimientos de javascript, react, nodejs y llegar a dominar extensiones para facilictar el uso como tailwind para facilitar el uso de react </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Auxiliar de sistemas</h4>
+                        <span class="casa">Olimpia management</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <p>Empresa en la que llegue a laborar realizando practicas de lo aprendido en el centro de aprendizaje, brindando soporte tecnico a aplicativos propios de la empresa</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asesor comercial</h4>
+                        <span class="casa">Grupo Continental S.A.S</span>
+                        <span class="fecha">2021-actual</span>
+                        <p>realizo funciones de visitas presenciales a diferentes clientes en el sector automotriz en zonas de la ciudad y su alrededores, obteniendo ordenes de pedidos y amnejo de dinero, adicionalmente realizo contorl logistico de despachos y entregas oportunidad de los productos requeridos por nuestros clientes  </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mis proyectos -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://pokedexpokemongo.netlify.app/"><img src="img/pokedex.png"  alt="" ></a>
+                    <div class="overlay">
+                        <h3>Pokemon</h3>
+                        <p>React</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/curiosity.png" alt="">
+                    <div class="overlay">
+                        <h3>curiosidades DBZ</h3>
+                        <p>javascript y html</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e-commerce.png" alt="">
+                    <div class="overlay">
+                        <h3>E-commerce</h3>
+                        <p>javascript y html</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/clima.png" alt="">
+                    <div class="overlay">
+                        <h3>Clima</h3>
+                        <p>react</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/regUser.png" alt="">
+                    <div class="overlay">
+                        <h3>Registro de Usuarios</h3>
+                        <p>react</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/calcula.png" alt="">
+                    <div class="overlay">
+                        <h3>reto/h3>
+                        <p>javascript y html</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- informacion -->
+    <section id="contactame" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTAME</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/fondoc.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bogotá, Colombia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                contactame: +57 3208882366 - 3054528658
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: diego.roldan4222@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/dieginhor"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/diego-roldan-a83755254/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/dieginhoskrp/"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="logica.js"></script>
+</body>
+</html>
