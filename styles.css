@@ -217,10 +217,11 @@ html{
     background-color: #043229;
     color: #fff;
     padding: 50px 20px;
+    justify-content: space-between;
+    display: flex;
 }
 .skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+    width: 100%;
 }
 .skills h2{
     color: #7ee022;
@@ -228,142 +229,21 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
+    
 }
 .skills .fila{
     display: flex;
 }
 .skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
+    min-width: 50%;
+    max-width: 50%;
 }
 .skills .fila .col h3{
     color: #7ee022;
     font-size: 28px;
     font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: #28f0fe;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #131517;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
 }
 
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .react{
-    width: 0%;
-    animation: 2s react forwards;
-}
-@keyframes react {
-    0%{width: 0%;}
-    100%{width: 72%;}
-}
-
-.skills .skill .tailwind{
-    width: 0%;
-    animation: 2s tailwind forwards;
-}
-@keyframes tailwind {
-    0%{width: 0%;}
-    100%{width: 48%;}
-}
-
-.skills .skill .Nodejs{
-    width: 0%;
-    animation: 2s Nodejs forwards;
-}
-@keyframes Nodejs {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .Honestidad{
-    width: 0%;
-    animation: 2s Honestidad forwards;
-}
-@keyframes Honestidad {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 85%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 73%;}
-}
-
-.skills .skill .Deseos{
-    width: 0%;
-    animation: 2s Deseos forwards;
-}
-@keyframes Deseos {
-    0%{width: 0%;}
-    100%{width: 92%;}
-}
-
-.skills .skill .capacidad{
-    width: 0%;
-    animation: 2s capacidad forwards;
-}
-@keyframes capacidad {
-    0%{width: 0%;}
-    100%{width: 94%;}
-}
 /* curriculum */
 .curriculum{
     background-color: #064337;
@@ -507,6 +387,7 @@ html{
     width: 100%;
     display: block;
     border-radius: 100px;
+    height: 250px;
 }
 .portafolio .galeria .proyecto .overlay{
     color: #085747;
