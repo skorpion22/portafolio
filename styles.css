@@ -384,10 +384,10 @@ html{
     cursor: pointer;
 }
 .portafolio .galeria .proyecto img{
-    width: 100%;
+    width: 280px;
     display: block;
     border-radius: 100px;
-    height: 250px;
+    height: 280px;
 }
 .portafolio .galeria .proyecto .overlay{
     color: #085747;
